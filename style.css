@@ -148,14 +148,11 @@ color: hsl(332, 51%, 32%);
     display: flex;
 }
 
-.table {
-    display: flex;
-    justify-content: space-between;
-}
-
-.table .values p {
+.value p {
+    left: 0;
     color: hsl(14, 45%, 36%);
     font-weight: 800;
+    text-align: center;
 }
 .nutrients  {
     margin: 0 30px;
@@ -163,12 +160,19 @@ color: hsl(332, 51%, 32%);
     flex-direction: column;
     /* border: 1px solid red; */
     align-items: flex-start;
+    position: relative;
 }
 
-.values {
-    margin: 0 600px;
+.value {
     display: flex;
-    flex-direction: column;
-    /* border: 1px solid blue; */
+    /* border: 1px solid red; */
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid hsl(14, 45%, 36%);
+}
+
+.number{
+    left: 600px;
+    margin-right: 600px !important;
 }
 
